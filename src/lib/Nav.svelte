@@ -55,4 +55,55 @@
 	img:hover {
 		transform: scale(1.05);
 	}
+
+	@media (min-width: 300px) {
+		img {
+			display: none;
+		}
+
+		ul {
+			flex-direction: column;
+		}
+
+		li {
+			margin: 0;
+			margin-inline: auto;
+		}
+
+		h1 {
+			font-size: 1rem;
+		}
+	}
+
+	@media (min-width: 600px) {
+		nav {
+			width: 100%;
+		}
+
+		/* ul {
+			flex-direction: row;
+		} */
+
+		h1 {
+			font-size: 1.25rem;
+		}
+
+		img {
+			display: block;
+		}
+	}
+
+	@media (min-width: 800px) {
+		nav {
+			width: 100%;
+		}
+
+		ul {
+			flex-direction: row;
+		}
+
+		h1 {
+			font-size: 1.75rem;
+		}
+	}
 </style>

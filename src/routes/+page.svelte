@@ -77,4 +77,26 @@
 	i:hover {
 		color: rgb(179, 25, 25);
 	}
+
+	@media (min-width: 300px) {
+		main {
+			width: 100%;
+		}
+
+		h1 {
+			font-size: 1.5rem;
+		}
+
+		h2 {
+			font-size: 1.25rem;
+		}
+
+		h3 {
+			font-size: 1rem;
+		}
+
+		h4 {
+			font-size: 3.75rem;
+		}
+	}
 </style>
