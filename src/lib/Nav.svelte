@@ -63,10 +63,10 @@
 
 		ul {
 			flex-direction: column;
+			margin-right: 2rem;
 		}
 
 		li {
-			margin: 0;
 			margin-inline: auto;
 		}
 

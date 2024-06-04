@@ -7,21 +7,23 @@
 	/>
 </svelte:head>
 
-<main>
-	<h1>This is from the <span>Better Data Visualization</span> course.</h1>
-</main>
+<article>
+	<main>
+		<h1>This is from the <span>Better Data Visualization</span> course.</h1>
+	</main>
 
-<h2>These are different charts that I made with svelte and d3 and random data...</h2>
+	<h2>These are different charts that I made with svelte and d3 and random data...</h2>
 
-<section>
-	<h3>Here is the github repo</h3>
+	<section>
+		<h3>Here is the github repo</h3>
 
-	<h4>
-		<a href="https://github.com/gabrielatwell1987/data-visualizations-svelte"
-			><i class="fa-brands fa-github"></i></a
-		>
-	</h4>
-</section>
+		<h4>
+			<a href="https://github.com/gabrielatwell1987/data-visualizations-svelte"
+				><i class="fa-brands fa-github"></i></a
+			>
+		</h4>
+	</section>
+</article>
 
 <style>
 	main {
@@ -80,7 +82,8 @@
 
 	@media (min-width: 300px) {
 		main {
-			width: 100%;
+			/* width: 100%; */
+			padding: 0.5rem;
 		}
 
 		h1 {
@@ -97,6 +100,10 @@
 
 		h4 {
 			font-size: 3.75rem;
+		}
+
+		article {
+			padding: 1rem;
 		}
 	}
 </style>
