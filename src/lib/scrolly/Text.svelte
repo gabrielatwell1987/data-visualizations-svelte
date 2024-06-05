@@ -59,4 +59,33 @@
 		color: #ccc;
 		font-weight: 200;
 	}
+
+	@media (min-width: 300px) {
+		p {
+			font-size: 1rem;
+			line-height: 1.25;
+		}
+
+		section {
+			max-width: 95%;
+		}
+	}
+
+	@media (min-width: 600px) {
+		p {
+			font-size: 1.25rem;
+			line-height: 1.5;
+		}
+
+		section {
+			max-width: 90%;
+		}
+	}
+
+	@media (min-width: 800px) {
+		p {
+			font-size: 1.5rem;
+			line-height: 1.75;
+		}
+	}
 </style>

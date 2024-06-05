@@ -193,4 +193,22 @@
 		width: 100%;
 		height: 100%;
 	}
+
+	@media (min-width: 300px) {
+		h1 {
+			font-size: 1rem;
+		}
+	}
+
+	@media (min-width: 600px) {
+		h1 {
+			font-size: 1.5rem;
+		}
+	}
+
+	@media (min-width: 800px) {
+		h1 {
+			font-size: 2.5rem;
+		}
+	}
 </style>

@@ -64,6 +64,7 @@
 		ul {
 			flex-direction: column;
 			margin-right: 2rem;
+			gap: 0.25rem;
 		}
 
 		li {
@@ -72,6 +73,10 @@
 
 		h1 {
 			font-size: 1rem;
+		}
+
+		a {
+			font-size: 0.75rem;
 		}
 	}
 
