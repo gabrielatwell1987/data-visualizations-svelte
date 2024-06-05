@@ -63,7 +63,7 @@
 
 		ul {
 			flex-direction: column;
-			margin-right: 2rem;
+			margin-inline: auto;
 			gap: 0.25rem;
 		}
 
@@ -85,16 +85,20 @@
 			width: 100%;
 		}
 
-		/* ul {
-			flex-direction: row;
-		} */
-
 		h1 {
 			font-size: 1.25rem;
 		}
 
 		img {
 			display: block;
+		}
+
+		a {
+			font-size: 1rem;
+		}
+
+		ul {
+			gap: 1rem;
 		}
 	}
 
@@ -105,10 +109,15 @@
 
 		ul {
 			flex-direction: row;
+			gap: 1.5rem;
 		}
 
 		h1 {
 			font-size: 1.75rem;
+		}
+
+		a {
+			font-size: 1.5rem;
 		}
 	}
 </style>
