@@ -96,7 +96,7 @@
 
 	<div class="steps">
 		<Telling bind:value={currentStep}>
-			{#each ['made', 'with', 'svelte'] as text, i}
+			{#each ['d3', 'and', 'svelte'] as text, i}
 				<div class="step" class:active={currentStep === i}>
 					<div class="step-content">
 						<div class="step-content">
@@ -196,7 +196,7 @@
 
 	@media (min-width: 300px) {
 		h1 {
-			font-size: 1rem;
+			font-size: 2rem;
 		}
 	}
 

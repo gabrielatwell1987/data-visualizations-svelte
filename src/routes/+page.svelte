@@ -37,8 +37,10 @@
 	h1,
 	h3 {
 		text-align: center;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+			sans-serif;
+		font-size: clamp(1.25rem, 2vw, 3rem);
 		font-weight: 400;
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 		color: #ccc;
 		display: block;
 	}
@@ -46,9 +48,9 @@
 	h2,
 	h4 {
 		text-align: center;
-		font-size: 1.25rem;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-size: clamp(1.2rem, 2vw, 2rem);
 		font-weight: 200;
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 		color: #ccc;
 		margin-top: 5%;
 		letter-spacing: 3px;
@@ -61,14 +63,13 @@
 	h4 {
 		margin: 0;
 		margin-top: 2%;
-		font-size: 3rem;
 	}
 
 	span {
 		color: rgb(179, 25, 25);
+		font-family: var(--mono);
 		font-weight: 900;
 		letter-spacing: 5px;
-		font-family: var(--san-serif);
 	}
 
 	a {
@@ -76,30 +77,17 @@
 		color: #ccc;
 	}
 
-	i:hover {
-		color: rgb(179, 25, 25);
+	i {
+		font-size: 8rem;
+
+		&:hover {
+			color: rgb(179, 25, 25);
+		}
 	}
 
 	@media (min-width: 300px) {
 		main {
-			/* width: 100%; */
 			padding: 0.5rem;
-		}
-
-		h1 {
-			font-size: 1.5rem;
-		}
-
-		h2 {
-			font-size: 1.25rem;
-		}
-
-		h3 {
-			font-size: 1rem;
-		}
-
-		h4 {
-			font-size: 3.75rem;
 		}
 
 		article {

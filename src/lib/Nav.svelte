@@ -14,29 +14,26 @@
 <style>
 	nav {
 		background-color: #111;
-		padding: 1rem;
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
-		margin-bottom: 1%;
+		margin-bottom: 3%;
 	}
 
 	ul {
 		display: flex;
 		justify-content: space-evenly;
 		list-style-type: none;
-		margin: 0;
-		padding: 0;
 		gap: 1.5rem;
 	}
 
 	li {
 		margin: 0 1rem;
 		transition: transform 0.5s ease;
-	}
 
-	li:hover {
-		transform: scale(1.05);
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 
 	a {
@@ -48,12 +45,13 @@
 
 	img {
 		width: 200px;
-		height: 75px;
+		height: 200px;
 		transition: transform 0.5s ease;
-	}
+		margin-left: 15rem;
 
-	img:hover {
-		transform: scale(1.05);
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 
 	@media (min-width: 300px) {
@@ -71,12 +69,13 @@
 			margin-inline: auto;
 		}
 
-		h1 {
-			font-size: 1rem;
+		a {
+			font-size: clamp(1.5rem, 2vw, 3rem);
+			margin-right: 1rem;
 		}
 
-		a {
-			font-size: 0.75rem;
+		nav {
+			padding: 1rem;
 		}
 	}
 
@@ -85,16 +84,8 @@
 			width: 100%;
 		}
 
-		h1 {
-			font-size: 1.25rem;
-		}
-
 		img {
 			display: block;
-		}
-
-		a {
-			font-size: 1rem;
 		}
 
 		ul {
@@ -105,19 +96,12 @@
 	@media (min-width: 800px) {
 		nav {
 			width: 100%;
+			padding: 0;
 		}
 
 		ul {
 			flex-direction: row;
 			gap: 1.5rem;
-		}
-
-		h1 {
-			font-size: 1.75rem;
-		}
-
-		a {
-			font-size: 1.5rem;
 		}
 	}
 </style>

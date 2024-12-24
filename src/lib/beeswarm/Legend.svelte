@@ -58,7 +58,7 @@
 		text-transform: uppercase;
 		font-weight: 600;
 		transition: opacity 300ms ease;
-		font-size: 1rem;
+		font-size: 1.1rem;
 		cursor: pointer;
 	}
 

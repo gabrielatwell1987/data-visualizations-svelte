@@ -153,16 +153,16 @@
 
 <style>
 	:global(.tick text, .axis-title) {
-		font-size: 12px; /* How big our text is */
-		font-weight: 400; /* How bold our text is */
-		fill: hsla(212, 10%, 53%, 1); /* The color of our text */
-		user-select: none; /* Prevents text from being selected */
+		font-size: 12px;
+		font-weight: 400;
+		fill: hsla(212, 10%, 53%, 1);
+		user-select: none;
 	}
 
 	h1 {
 		margin: 0 0 1.5rem 0;
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		font-size: 2.5rem;
+		font-size: clamp(1.5rem, 3vw, 5rem);
 		font-weight: 600;
 		text-align: center;
 		color: #eee;

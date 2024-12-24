@@ -5,7 +5,8 @@
 
 <main>
 	<Nav />
-	<slot></slot>
+
+	<slot />
 </main>
 
 <style>

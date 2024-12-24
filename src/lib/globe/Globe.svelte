@@ -172,10 +172,10 @@
 	}
 
 	h1 {
-		font-size: 2.5rem;
+		font-size: 2rem;
 		font-weight: 700;
 		margin-bottom: 5%;
-		letter-spacing: 3px;
+		letter-spacing: 1px;
 		font-family: var(--mono);
 	}
 
