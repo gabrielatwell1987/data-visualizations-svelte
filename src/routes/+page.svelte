@@ -9,7 +9,12 @@
 
 <article>
 	<main>
-		<h1>This is from the <span>Better Data Visualization</span> course.</h1>
+		<h1>
+			This is from the <a
+				href="https://www.newline.co/courses/better-data-visualizations-with-svelte"
+				target="_blank"><span>Better Data Visualization</span></a
+			> course.
+		</h1>
 	</main>
 
 	<h2>These are different charts that I made with svelte and d3 and random data...</h2>
@@ -18,7 +23,7 @@
 		<h3>Here is the github repo</h3>
 
 		<h4>
-			<a href="https://github.com/gabrielatwell1987/data-visualizations-svelte"
+			<a href="https://github.com/gabrielatwell1987/data-visualizations-svelte" target="_blank"
 				><i class="fa-brands fa-github"></i></a
 			>
 		</h4>
@@ -65,16 +70,17 @@
 		margin-top: 2%;
 	}
 
-	span {
-		color: rgb(179, 25, 25);
-		font-family: var(--mono);
-		font-weight: 900;
-		letter-spacing: 5px;
-	}
-
 	a {
 		text-decoration: none;
 		color: #ccc;
+		cursor: pointer;
+
+		& span {
+			color: rgb(179, 25, 25);
+			font-family: var(--mono);
+			font-weight: 900;
+			letter-spacing: 5px;
+		}
 	}
 
 	i {
