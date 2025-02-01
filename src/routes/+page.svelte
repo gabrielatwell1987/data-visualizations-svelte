@@ -15,13 +15,11 @@
 				target="_blank"><span>Better Data Visualization</span></a
 			> course.
 		</h1>
+
+		<h2>These are different charts that I made with svelte and d3 and random data...</h2>
 	</main>
 
-	<h2>These are different charts that I made with svelte and d3 and random data...</h2>
-
 	<section>
-		<h3>Here is the github repo</h3>
-
 		<h4>
 			<a href="https://github.com/gabrielatwell1987/data-visualizations-svelte" target="_blank"
 				><i class="fa-brands fa-github"></i></a
@@ -33,14 +31,14 @@
 <style>
 	main {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		margin-block: 10%;
 		position: relative;
 	}
 
-	h1,
-	h3 {
+	h1 {
 		text-align: center;
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
 			sans-serif;
@@ -61,10 +59,6 @@
 		letter-spacing: 3px;
 	}
 
-	h3 {
-		margin-top: 5%;
-	}
-
 	h4 {
 		margin: 0;
 		margin-top: 2%;
@@ -76,8 +70,8 @@
 		cursor: pointer;
 
 		& span {
-			color: rgb(179, 25, 25);
-			font-family: var(--mono);
+			color: rgba(179, 25, 25, 0.75);
+			font-family: var(--san-serif);
 			font-weight: 900;
 			letter-spacing: 5px;
 		}
@@ -87,7 +81,7 @@
 		font-size: 8rem;
 
 		&:hover {
-			color: rgb(179, 25, 25);
+			color: rgba(179, 25, 25, 0.5);
 		}
 	}
 
