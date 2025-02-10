@@ -132,7 +132,7 @@
 	}
 
 	h1 {
-		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-family: 'Roboto Condensed', sans-serif;
 		font-size: 2.5rem;
 		font-weight: 600;
 		margin-top: 3%;

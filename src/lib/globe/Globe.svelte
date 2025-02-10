@@ -169,10 +169,10 @@
 	h2 {
 		color: antiquewhite;
 		text-align: center;
-		font-family: 'Roboto Condensed', sans-serif;
 	}
 
 	h1 {
+		font-family: 'Roboto Condensed', sans-serif;
 		font-size: 2rem;
 		font-weight: 700;
 		margin-bottom: 5%;
@@ -181,6 +181,7 @@
 	}
 
 	h2 {
+		font-family: 'Roboto Condensed', sans-serif;
 		font-size: 1.25rem;
 		font-weight: 200;
 		margin-bottom: 7.5%;
