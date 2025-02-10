@@ -18,16 +18,6 @@
 
 		<h2>These are different charts that I made with svelte and d3 and random data...</h2>
 	</main>
-
-	<section>
-		<h4>
-			<a
-				class="github"
-				href="https://github.com/gabrielatwell1987/data-visualizations-svelte"
-				target="_blank"><i class="fa-brands fa-github"></i></a
-			>
-		</h4>
-	</section>
 </article>
 
 <style>
@@ -60,17 +50,6 @@
 		letter-spacing: 3px;
 	}
 
-	h4 {
-		margin: 0;
-		margin-top: 2%;
-	}
-
-	.github {
-		position: absolute;
-		bottom: 1rem;
-		left: 1rem;
-	}
-
 	a {
 		text-decoration: none;
 		color: #ccc;
@@ -81,14 +60,6 @@
 			font-family: var(--san-serif);
 			font-weight: 900;
 			letter-spacing: 5px;
-		}
-	}
-
-	i {
-		font-size: clamp(1.2rem, 3vw, 5rem);
-
-		&:hover {
-			color: rgba(179, 25, 25, 0.5);
 		}
 	}
 
