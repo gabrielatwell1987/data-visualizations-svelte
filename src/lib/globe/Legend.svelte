@@ -28,6 +28,7 @@
 	.legend {
 		display: flex;
 		gap: 6px;
+		margin-top: 1rem;
 	}
 
 	.bar {

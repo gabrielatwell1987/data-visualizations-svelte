@@ -52,7 +52,7 @@
 	.tooltip {
 		position: absolute;
 		padding: 8px 6px;
-		background: white;
+		background: #ccc;
 		box-shadow: rgba(0, 0, 0, 0.15) 2px 3px 8px;
 		border-radius: 3px;
 		pointer-events: none;
@@ -64,9 +64,11 @@
 
 	h1 {
 		margin: 0;
+		font-family: 'Roboto Condensed', sans-serif;
 		font-size: 1rem;
 		font-weight: 500;
 		margin-bottom: 3px;
+		color: #242424;
 	}
 
 	.info {

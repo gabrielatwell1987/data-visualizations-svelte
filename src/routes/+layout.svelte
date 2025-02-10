@@ -14,6 +14,7 @@
 
 <style>
 	:global(body) {
-		background-color: rgb(40, 40, 40);
+		color: #ccc;
+		background-color: rgb(35, 35, 35);
 	}
 </style>

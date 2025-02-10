@@ -161,7 +161,7 @@
 
 	h1 {
 		margin: 0 0 1.5rem 0;
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-family: 'Roboto Condensed', sans-serif;
 		font-size: clamp(1.5rem, 3vw, 5rem);
 		font-weight: 600;
 		text-align: center;

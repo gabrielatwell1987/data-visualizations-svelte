@@ -54,9 +54,11 @@
 	}
 
 	p {
-		color: #8f8f8f;
+		color: #888;
 		text-transform: uppercase;
+		font-family: 'Roboto Condensed', sans-serif;
 		font-weight: 600;
+		letter-spacing: 2px;
 		transition: opacity 300ms ease;
 		font-size: 1.1rem;
 		cursor: pointer;

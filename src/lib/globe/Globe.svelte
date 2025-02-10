@@ -129,7 +129,7 @@
 				<path
 					d={path(tooltipData)}
 					fill="transparent"
-					stroke="white"
+					stroke="#aaa"
 					stroke-width="2"
 					in:draw={{ duration: 1500 }}
 				/>
@@ -169,6 +169,7 @@
 	h2 {
 		color: antiquewhite;
 		text-align: center;
+		font-family: 'Roboto Condensed', sans-serif;
 	}
 
 	h1 {

@@ -44,11 +44,12 @@
 		font-weight: 500;
 		margin-bottom: 0.5rem;
 		width: 100%;
+		color: #242424;
 	}
 
 	h2 {
 		font-size: 0.8rem;
-		color: #8f8f8f;
+		color: #242424;
 		text-transform: uppercase;
 		font-weight: 300;
 	}
@@ -57,7 +58,7 @@
 		font-size: 80%;
 		padding: 2px 4px;
 		background: rgba(65, 31, 31, 1);
-		color: white;
+		color: #242424;
 		border-radius: 5px;
 		margin-left: 0.25%;
 		display: inline-block;

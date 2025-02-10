@@ -30,7 +30,7 @@
 	main {
 		position: absolute;
 		padding: 0.75rem;
-		background: white;
+		background: #ccc;
 		box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
 		border-radius: 5px;
 		pointer-events: none;
@@ -44,11 +44,12 @@
 		font-weight: 500;
 		margin-bottom: 0.5rem;
 		width: 100%;
+		color: #242424;
 	}
 
 	h2 {
 		font-size: 0.8rem;
-		color: #8f8f8f;
+		color: #242424;
 		text-transform: uppercase;
 		font-weight: 300;
 	}
@@ -56,7 +57,7 @@
 	span {
 		font-size: 80%;
 		padding: 2px 4px;
-		background: rgba(65, 31, 31, 1);
+		background: rgb(107, 29, 29);
 		color: white;
 		border-radius: 5px;
 		margin-left: 0.25%;

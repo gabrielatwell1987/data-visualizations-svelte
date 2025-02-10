@@ -78,6 +78,6 @@
 		letter-spacing: 5px;
 		color: #eee;
 		text-align: center;
-		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-family: 'Roboto Condensed', sans-serif;
 	}
 </style>

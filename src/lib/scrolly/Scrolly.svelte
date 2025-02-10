@@ -153,6 +153,7 @@
 		display: flex;
 		justify-content: center;
 		place-items: center;
+		color: #242424;
 	}
 
 	.step.active {

@@ -39,7 +39,6 @@
 		letter-spacing: 3px;
 		line-height: 1.75rem;
 		color: #ccc;
-		font-weight: 200;
 	}
 
 	@media (min-width: 300px) {
@@ -68,6 +67,7 @@
 		p {
 			font-size: 1.5rem;
 			line-height: 1.75;
+			font-weight: 600;
 		}
 	}
 </style>
