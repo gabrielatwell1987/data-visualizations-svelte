@@ -21,8 +21,10 @@
 
 	<section>
 		<h4>
-			<a href="https://github.com/gabrielatwell1987/data-visualizations-svelte" target="_blank"
-				><i class="fa-brands fa-github"></i></a
+			<a
+				class="github"
+				href="https://github.com/gabrielatwell1987/data-visualizations-svelte"
+				target="_blank"><i class="fa-brands fa-github"></i></a
 			>
 		</h4>
 	</section>
@@ -48,8 +50,7 @@
 		display: block;
 	}
 
-	h2,
-	h4 {
+	h2 {
 		text-align: center;
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		font-size: clamp(1.2rem, 2vw, 2rem);
@@ -62,6 +63,12 @@
 	h4 {
 		margin: 0;
 		margin-top: 2%;
+	}
+
+	.github {
+		position: absolute;
+		bottom: 1rem;
+		left: 1rem;
 	}
 
 	a {
@@ -78,7 +85,7 @@
 	}
 
 	i {
-		font-size: 8rem;
+		font-size: clamp(1.2rem, 3vw, 5rem);
 
 		&:hover {
 			color: rgba(179, 25, 25, 0.5);
