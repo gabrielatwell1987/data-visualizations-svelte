@@ -1,0 +1,20 @@
+<script>
+</script>
+
+<main>
+	<h1>visualizations</h1>
+</main>
+
+<style>
+	main {
+		& h1 {
+			background: linear-gradient(to top, rgba(179, 25, 25, 0.5) 0%, transparent 100%);
+			background-repeat: no-repeat;
+			background-size: 100% 40%;
+			background-position: 0 90%;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: clamp(1rem, 3vw, 5rem);
+			font-weight: 800;
+		}
+	}
+</style>

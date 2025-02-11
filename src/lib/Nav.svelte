@@ -1,7 +1,13 @@
-<script></script>
+<script>
+	import Title from '$lib/Title.svelte';
+</script>
 
 <nav>
-	<a href="/"><img src="graph.png" alt="" /></a>
+	<a href="/">
+		<img src="graph.png" alt="" />
+
+		<Title />
+	</a>
 
 	<ul>
 		<li><h1><a href="/scatter">Scatterplot</a></h1></li>
@@ -18,39 +24,45 @@
 		align-items: center;
 		justify-content: space-evenly;
 		margin-bottom: 3%;
-	}
+		border-bottom: 20px double rgba(35, 35, 35, 1);
 
-	ul {
-		display: flex;
-		justify-content: space-evenly;
-		list-style-type: none;
-		gap: 1.5rem;
-	}
+		& ul {
+			display: flex;
+			justify-content: space-evenly;
+			list-style-type: none;
+			gap: 1.5rem;
 
-	li {
-		margin: 0 1rem;
-		transition: transform 0.5s ease;
+			& li {
+				transition: transform 0.5s ease;
 
-		&:hover {
-			transform: scale(1.05);
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
 		}
-	}
 
-	a {
-		color: #eee;
-		text-decoration: none;
-		font-size: 1.5rem;
-		letter-spacing: 2px;
-	}
+		& a {
+			color: #eee;
+			text-decoration: none;
+			font-size: 1.5rem;
+			letter-spacing: 2px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 2rem;
+			margin-left: 1rem;
+			margin-right: 1rem;
 
-	img {
-		width: 200px;
-		height: 200px;
-		transition: transform 0.5s ease;
-		margin-left: 15rem;
+			& img {
+				width: 5em;
+				height: 5em;
+				transition: transform 0.5s ease;
+				margin-left: 15rem;
 
-		&:hover {
-			transform: scale(1.05);
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
 		}
 	}
 
