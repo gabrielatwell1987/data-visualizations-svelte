@@ -59,10 +59,10 @@
 
 		& ul {
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: center;
 			align-items: center;
 			list-style-type: none;
-			gap: 1.5rem;
+			gap: 3rem;
 
 			& li {
 				transition: transform 0.5s ease;
@@ -73,7 +73,7 @@
 				}
 
 				& h1 a {
-					font-size: clamp(1.75rem, 2vw, 3rem);
+					font-size: clamp(1.25rem, 2vw, 3rem);
 					margin: 0;
 					padding: 0;
 					transition: color 0.5s ease;
@@ -154,9 +154,11 @@
 			height: 100vh;
 			width: 100%;
 			background: #111;
-			padding: 4rem 2rem;
-			flex-direction: column !important;
+			padding: 2rem;
+			flex-direction: column;
 			align-items: center;
+			justify-content: center;
+			gap: 0.5rem;
 			transform: translateX(-100%);
 			transition: transform 0.5s ease-in-out;
 			z-index: 5;
@@ -181,7 +183,7 @@
 		}
 
 		a {
-			font-size: clamp(1.5rem, 2vw, 3rem);
+			/* font-size: clamp(1.5rem, 2vw, 3rem); */
 			margin-right: 1rem;
 		}
 	}
@@ -193,7 +195,7 @@
 
 		ul {
 			margin-inline: auto;
-			gap: 0.25rem;
+			/* gap: 0.25rem; */
 		}
 
 		li {
@@ -201,7 +203,7 @@
 		}
 
 		a {
-			font-size: clamp(1.5rem, 2vw, 2.5rem);
+			/* font-size: clamp(1.5rem, 2vw, 2.5rem); */
 			margin-right: 1rem;
 		}
 
