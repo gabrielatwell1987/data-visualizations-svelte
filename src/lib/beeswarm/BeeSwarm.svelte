@@ -160,13 +160,17 @@
 	}
 
 	h1 {
-		margin: 0 0 1.5rem 0;
+		margin: 3em 0 1.5rem 0;
 		font-family: 'Roboto Condensed', sans-serif;
 		font-size: clamp(1.5rem, 3vw, 5rem);
 		font-weight: 600;
 		text-align: center;
 		color: #eee;
 		letter-spacing: 3px;
+
+		@media (min-width: 500px) {
+			margin: 0 0 1.5rem 0;
+		}
 	}
 
 	circle {

@@ -13,8 +13,12 @@
 			background-size: 100% 40%;
 			background-position: 0 90%;
 			font-family: 'Roboto Condensed', sans-serif;
-			font-size: clamp(1rem, 3vw, 5rem);
+			font-size: clamp(1.2rem, 3vw, 5rem);
 			font-weight: 800;
+
+			@media (max-width: 500px) {
+				display: none;
+			}
 		}
 	}
 </style>

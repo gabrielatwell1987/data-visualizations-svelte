@@ -5,7 +5,9 @@
 </script>
 
 <main>
-	<Nav />
+	<div class="nav">
+		<Nav />
+	</div>
 
 	<slot />
 
@@ -16,5 +18,11 @@
 	:global(body) {
 		color: #ccc;
 		background-color: rgb(35, 35, 35);
+	}
+
+	main {
+		& .nav {
+			margin-bottom: 2em;
+		}
 	}
 </style>

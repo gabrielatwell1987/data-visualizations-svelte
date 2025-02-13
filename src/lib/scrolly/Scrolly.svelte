@@ -140,6 +140,11 @@
 		letter-spacing: 5px;
 		color: #eee;
 		text-align: center;
+		margin-top: 2em;
+
+		@media (min-width: 500px) {
+			margin-top: 0;
+		}
 	}
 
 	b {

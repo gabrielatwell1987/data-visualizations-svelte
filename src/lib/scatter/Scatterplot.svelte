@@ -75,9 +75,14 @@
 		font-size: 2.5rem;
 		font-weight: 600;
 		margin-bottom: 1rem;
+		margin-top: 2em;
 		letter-spacing: 5px;
 		color: #eee;
 		text-align: center;
 		font-family: 'Roboto Condensed', sans-serif;
+
+		@media (min-width: 500px) {
+			margin-top: 0;
+		}
 	}
 </style>

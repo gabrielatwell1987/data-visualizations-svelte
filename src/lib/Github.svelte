@@ -25,7 +25,7 @@
 			z-index: 5;
 
 			& i {
-				font-size: clamp(1.2rem, 3vw, 5rem);
+				font-size: clamp(2em, 2vw, 5em);
 
 				&:hover {
 					color: rgba(179, 25, 25, 0.5);

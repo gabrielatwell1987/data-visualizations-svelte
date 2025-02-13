@@ -1,5 +1,11 @@
 <script>
 	import Title from '$lib/Title.svelte';
+
+	let isMenuOpen = false;
+
+	const toggleMenu = () => {
+		isMenuOpen = !isMenuOpen;
+	};
 </script>
 
 <nav>
@@ -9,11 +15,36 @@
 		<Title />
 	</a>
 
-	<ul>
-		<li><h1><a href="/scatter">Scatterplot</a></h1></li>
-		<li><h1><a href="/beeswarm">Beeswarm</a></h1></li>
-		<li><h1><a href="/globe">Globe</a></h1></li>
-		<li><h1><a href="/scrolly">Scrolly</a></h1></li>
+	<button class="hamburger" on:click={toggleMenu} aria-label="Menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+
+	<ul class:active={isMenuOpen}>
+		<li>
+			<h1>
+				<a href="/scatter">Scatterplot</a>
+			</h1>
+		</li>
+
+		<li>
+			<h1>
+				<a href="/beeswarm">Beeswarm</a>
+			</h1>
+		</li>
+
+		<li>
+			<h1>
+				<a href="/globe">Globe</a>
+			</h1>
+		</li>
+
+		<li>
+			<h1>
+				<a href="/scrolly">Scrolly</a>
+			</h1>
+		</li>
 	</ul>
 </nav>
 
@@ -29,14 +60,27 @@
 		& ul {
 			display: flex;
 			justify-content: space-evenly;
+			align-items: center;
 			list-style-type: none;
 			gap: 1.5rem;
 
 			& li {
 				transition: transform 0.5s ease;
+				margin: 0;
 
 				&:hover {
 					transform: scale(1.05);
+				}
+
+				& h1 a {
+					font-size: clamp(1.75rem, 2vw, 3rem);
+					margin: 0;
+					padding: 0;
+					transition: color 0.5s ease;
+
+					&:hover {
+						color: rgba(179, 25, 25, 0.5);
+					}
 				}
 			}
 		}
@@ -44,7 +88,7 @@
 		& a {
 			color: #eee;
 			text-decoration: none;
-			font-size: 1.5rem;
+			font-size: clamp(1.5rem, 2vw, 3rem);
 			letter-spacing: 2px;
 			display: flex;
 			align-items: center;
@@ -54,15 +98,91 @@
 			margin-right: 1rem;
 
 			& img {
-				width: 5em;
-				height: 5em;
+				width: clamp(em, 2vw, 5em);
+				height: clamp(3em, 2vw, 5em);
 				transition: transform 0.5s ease;
 				margin-left: 15rem;
 
 				&:hover {
 					transform: scale(1.05);
 				}
+
+				@media (max-width: 500px) {
+					display: none;
+				}
 			}
+		}
+	}
+
+	.hamburger {
+		display: none;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 2rem;
+		height: 2rem;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		padding: 0;
+		z-index: 10;
+
+		& span {
+			width: 2rem;
+			height: 0.25rem;
+			background: #eee;
+			border-radius: 10px;
+			transition: all 0.3s linear;
+			position: relative;
+			transform-origin: 1px;
+		}
+	}
+
+	@media (max-width: 799px) {
+		.hamburger {
+			display: flex;
+			position: absolute;
+			right: 2rem;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 11;
+		}
+
+		ul {
+			position: fixed;
+			top: 0;
+			right: 0;
+			height: 100vh;
+			width: 100%;
+			background: #111;
+			padding: 4rem 2rem;
+			flex-direction: column !important;
+			align-items: center;
+			transform: translateX(-100%);
+			transition: transform 0.5s ease-in-out;
+			z-index: 5;
+		}
+
+		ul.active {
+			transform: translateX(0);
+		}
+
+		nav {
+			padding: 1rem;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			height: 4rem;
+		}
+
+		img {
+			display: none;
+		}
+
+		a {
+			font-size: clamp(1.5rem, 2vw, 3rem);
+			margin-right: 1rem;
 		}
 	}
 
@@ -72,7 +192,6 @@
 		}
 
 		ul {
-			flex-direction: column;
 			margin-inline: auto;
 			gap: 0.25rem;
 		}
@@ -82,7 +201,7 @@
 		}
 
 		a {
-			font-size: clamp(1.5rem, 2vw, 3rem);
+			font-size: clamp(1.5rem, 2vw, 2.5rem);
 			margin-right: 1rem;
 		}
 
@@ -112,8 +231,24 @@
 		}
 
 		ul {
+			display: flex;
 			flex-direction: row;
+			justify-content: center;
+			align-items: center;
 			gap: 1.5rem;
+			width: auto;
+			position: static;
+			transform: none;
+			height: auto;
+			padding: 0;
+		}
+
+		.hamburger {
+			display: none;
+		}
+
+		img {
+			display: block;
 		}
 	}
 </style>

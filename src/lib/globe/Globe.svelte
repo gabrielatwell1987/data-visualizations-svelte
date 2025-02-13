@@ -175,9 +175,14 @@
 		font-family: 'Roboto Condensed', sans-serif;
 		font-size: 2rem;
 		font-weight: 700;
+		margin-top: 2em;
 		margin-bottom: 5%;
 		letter-spacing: 1px;
 		font-family: var(--mono);
+
+		@media (min-width: 500px) {
+			margin-top: 0;
+		}
 	}
 
 	h2 {
