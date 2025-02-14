@@ -150,11 +150,13 @@
 		ul {
 			position: fixed;
 			top: 0;
+			bottom: 0;
 			right: 0;
 			height: 100vh;
 			width: 100%;
 			background: #111;
 			padding: 2rem;
+			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
@@ -162,6 +164,16 @@
 			transform: translateX(-100%);
 			transition: transform 0.5s ease-in-out;
 			z-index: 5;
+			margin: 0;
+		}
+
+		ul li {
+			width: 100%; /* Make items take full width */
+			text-align: center; /* Center the text */
+		}
+
+		ul li h1 {
+			margin: 0; /* Reset margins */
 		}
 
 		ul.active {
