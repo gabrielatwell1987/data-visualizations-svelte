@@ -170,10 +170,6 @@
 			width: 100%;
 		}
 
-		ul li h1 {
-			margin: 1rem 0;
-		}
-
 		ul.active {
 			transform: translateX(0);
 		}
