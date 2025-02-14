@@ -158,7 +158,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			gap: 2rem;
+			gap: 0.1rem;
 			transform: translateX(-100%);
 			transition: transform 0.5s ease-in-out;
 			z-index: 5;
