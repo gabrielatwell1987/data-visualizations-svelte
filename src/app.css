@@ -1,9 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+	font-family: 'Reddit Mono';
+	src: url('/fonts/RedditMono-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url('/fonts/Roboto-Condensed-Regular') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('/fonts/SpaceGrotesk-Bold.ttf') format('true');
+	font-weight: 700;
+	font-style: normal;
+}
 
 :root {
-	--san-serif: 'Seymour One', sans-serif;
+	--san-serif: 'Roboto Condensed', sans-serif;
+	--title-text: 'Space Grotesk', sans-serif;
 	--mono: 'Reddit Mono', monospace;
 }
 
@@ -14,9 +32,9 @@
 }
 
 body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: var(--san-serif);
 }
 
 h1 {
-	font-family: var(--mono);
+	font-family: var(--title-text);
 }

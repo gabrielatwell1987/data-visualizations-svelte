@@ -64,7 +64,7 @@
 
 	h1 {
 		margin: 0;
-		font-family: 'Roboto Condensed', sans-serif;
+		font-family: var(--san-serif);
 		font-size: 1rem;
 		font-weight: 500;
 		margin-bottom: 3px;

@@ -32,19 +32,18 @@
 
 	h1 {
 		text-align: center;
-		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
-			sans-serif;
+		font-family: var(--san-serif);
 		font-size: clamp(1.25rem, 2vw, 3rem);
-		font-weight: 400;
+		font-weight: 600;
 		color: #ccc;
 		display: block;
 	}
 
 	h2 {
 		text-align: center;
-		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-		font-size: clamp(1.2rem, 2vw, 2rem);
-		font-weight: 200;
+		font-family: var(--san-serif);
+		font-size: clamp(1.2rem, 1.5vw, 1.75remrem);
+		font-weight: 400;
 		color: #ccc;
 		margin-top: 5%;
 		letter-spacing: 3px;
@@ -57,9 +56,9 @@
 
 		& span {
 			color: rgba(179, 25, 25, 0.75);
-			font-family: var(--san-serif);
+			font-family: var(--title-text);
 			font-weight: 900;
-			letter-spacing: 5px;
+			letter-spacing: 3px;
 		}
 	}
 

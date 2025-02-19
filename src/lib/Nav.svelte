@@ -189,7 +189,6 @@
 		}
 
 		a {
-			/* font-size: clamp(1.5rem, 2vw, 3rem); */
 			margin-right: 1rem;
 		}
 	}
@@ -201,7 +200,6 @@
 
 		ul {
 			margin-inline: auto;
-			/* gap: 0.25rem; */
 		}
 
 		li {
@@ -209,7 +207,6 @@
 		}
 
 		a {
-			/* font-size: clamp(1.5rem, 2vw, 2.5rem); */
 			margin-right: 1rem;
 		}
 

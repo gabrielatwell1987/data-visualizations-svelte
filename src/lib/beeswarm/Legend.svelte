@@ -56,7 +56,7 @@
 	p {
 		color: #888;
 		text-transform: uppercase;
-		font-family: 'Roboto Condensed', sans-serif;
+		font-family: var(--sans-serif);
 		font-weight: 600;
 		letter-spacing: 2px;
 		transition: opacity 300ms ease;

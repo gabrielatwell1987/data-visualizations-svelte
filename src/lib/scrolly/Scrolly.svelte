@@ -132,7 +132,7 @@
 	}
 
 	h1 {
-		font-family: 'Roboto Condensed', sans-serif;
+		font-family: var(--san-serif);
 		font-size: 2.5rem;
 		font-weight: 600;
 		margin-top: 3%;

@@ -12,7 +12,7 @@
 			background-repeat: no-repeat;
 			background-size: 100% 40%;
 			background-position: 0 90%;
-			font-family: 'Roboto Condensed', sans-serif;
+			font-family: var(--title-text);
 			font-size: clamp(1.2rem, 3vw, 5rem);
 			font-weight: 800;
 

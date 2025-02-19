@@ -79,7 +79,7 @@
 		letter-spacing: 5px;
 		color: #eee;
 		text-align: center;
-		font-family: 'Roboto Condensed', sans-serif;
+		font-family: var(--san-serif);
 
 		@media (min-width: 500px) {
 			margin-top: 0;
